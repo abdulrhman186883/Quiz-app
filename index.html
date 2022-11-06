@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  
+  <script>
+   
+    function quiz(){
+    var total = 100;
+      
+    var choice = document.getElementsByTagName("input");
+    
+    for (var i = 0; i<choice.length; i++){
+      
+      if(choice[i].checked){
+        
+        if (choice[i].value == 0){
+          total -=25;
+          
+          choice[i]
+        }
+      }
+      
+      
+    }
+    
+    
+  
+    
+ 
+      document.getElementById("output").innerHTML = "your result equal to " + total;
+     
+    
+    }
+    
+    
+    
+    
+  </script>
+  
+  
+  <body>
+    <h1> Evaluation </h1>
+   
+   
+   <h4> Exam out of 100 Marks</h4>
+   
+   
+   <div class="question">
+   
+   <p>Q1) 2+2 = .....</p>
+   
+   
+        <input type="radio" id="choice1" name ="q" value="1">
+        <label for="choice1">4</label><br>
+        
+        <input type="radio" id="choice2"  name ="q" value="0" >
+        <label for="choice2">6</label><br> 
+        
+        
+        <input type="radio" id="choice3"   name ="q" value="0" >
+        <label for="choice3">2</label><br><br>
+        
+        <input type="submit" value="Submit" onclick="quiz()">
+        
+        
+        
+          <p>Q2) 4+4 = .....</p>
+   
+   
+        <input type="radio" id="choice1" name ="q2" value="0">
+        <label for="choice1">4</label><br>
+        
+        <input type="radio" id="choice2"  name ="q2" value="1" >
+        <label for="choice2">8</label><br> 
+        
+        
+        <input type="radio" id="choice3"   name ="q2" value="0" >
+        <label for="choice3">2</label><br><br>
+        
+        <input type="submit" value="Submit" onclick="quiz()">
+     
+     
+      <p>Q3) 4/4 = .....</p>
+   
+   
+        <input type="radio" id="choice1" name ="q3" value="0">
+        <label for="choice1">3</label><br>
+        
+        <input type="radio" id="choice2"  name ="q3" value="0" >
+        <label for="choice2">2.4</label><br> 
+        
+        
+        <input type="radio" id="choice3"   name ="q3" value="1" >
+        <label for="choice3">1</label><br><br>
+        
+        <input type="submit" value="Submit" onclick="quiz()">
+        
+        
+        
+         <p>Q4) 4 X 4 = .....</p>
+   
+   
+        <input type="radio" id="choice1" name ="q4" value="0">
+        <label for="choice1">18</label><br>
+        
+        <input type="radio" id="choice2"  name ="q4" value="1" >
+        <label for="choice2">16</label><br> 
+        
+        
+        <input type="radio" id="choice3"   name ="q4" value="0" >
+        <label for="choice3">12</label><br><br>
+        
+        <input type="submit" value="Submit" onclick="quiz();">
+     
+  
+   </div>
+   
+   <p id= "output"></p>
+  
+  </body>
+</html>
